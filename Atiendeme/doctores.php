@@ -1,0 +1,1 @@
+<?php require 'components/Administrador/Doctores/doctores.php'; ?>

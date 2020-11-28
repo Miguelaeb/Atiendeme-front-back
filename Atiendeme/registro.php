@@ -1,0 +1,1 @@
+<?php require 'components/Registro/registro.php'; ?>
