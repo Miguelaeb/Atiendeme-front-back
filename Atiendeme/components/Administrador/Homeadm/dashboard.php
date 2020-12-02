@@ -43,9 +43,9 @@
                 <h4 class="text-light font-weight-bold mb-0">Administrador</h4>
             </div>
             <div class="menu">
-                <a href="dashboard.php" class="d-block text-light p-3 border-0 active-menu-option">Inicio</a>
+                <a href="index.php" class="d-block text-light p-3 border-0 active-menu-option">Inicio</a>
                 <a href="doctores.php" class="d-block text-light p-3 border-0 ">Doctores</a>
-                <a href="consultorios.php" class="d-block text-light p-3 border-0 ">Consultorios</a>
+                <a href="consultorios.php" class="d-block text-light p-3 border-0 ">Centros</a>
                 <a href="manejosec.php" class="d-block text-light p-3 border-0 ">Secretarias</a>
                 <a href="servicios.php" class="d-block text-light p-3 border-0 ">Servicios</a>
             </div>
@@ -104,22 +104,22 @@
                                 <div class="row">
                                     <div class="col-lg-3 col-md-6 d-flex stat my-3">
                                         <div class="mx-auto">
-                                            <button type="button" class="btn btn-outline-info">Manejar doctores</button>
+                                            <a href="doctores.php" type="button" class="btn btn-outline-info">Manejar doctores</a>
                                         </div>
                                     </div>
                                     <div class="col-lg-3 col-md-6 d-flex stat my-3">
                                         <div class="mx-auto">
-                                            <button type="button" class="btn btn-outline-info">Manejar consultorios</button>
+                                            <a href="consultorios.php" type="button" class="btn btn-outline-info">Manejar centros</a>
                                         </div>
                                     </div>
                                     <div class="col-lg-3 col-md-6 d-flex stat my-3">
                                         <div class="mx-auto">
-                                            <button type="button" class="btn btn-outline-info">Manejar secretarias</button>
+                                            <a href="manejosec.php" type="button" class="btn btn-outline-info">Manejar secretarias</a>
                                         </div>
                                     </div>
                                     <div class="col-lg-3 col-md-6 d-flex my-3">
                                         <div class="mx-auto">
-                                            <button type="button" class="btn btn-outline-info">Manejar servicios</button>
+                                            <a href="servicios.php" type="button" class="btn btn-outline-info">Manejar servicios</a>
                                         </div>
                                     </div>
                                 </div>

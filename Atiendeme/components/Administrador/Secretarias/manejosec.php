@@ -46,9 +46,9 @@
                 <h4 class="text-light font-weight-bold mb-0">Administrador</h4>
             </div>
             <div class="menu">
-                <a href="dashboard.php" class="d-block text-light p-3 border-0 ">Inicio</a>
+                <a href="dashboard.php" class="d-block text-light p-3 border-0 ">Home</a>
                 <a href="doctores.php" class="d-block text-light p-3 border-0 ">Doctores</a>
-                <a href="consultorios.php" class="d-block text-light p-3 border-0 ">Consultorios</a>
+                <a href="consultorios.php" class="d-block text-light p-3 border-0 ">Centros</a>
                 <a href="manejosec.php" class="d-block text-light p-3 border-0 active-menu-option">Secretarias</a>
                 <a href="servicios.php" class="d-block text-light p-3 border-0 ">Servicios</a>
             </div>
@@ -161,18 +161,7 @@
 
                                                     </tbody>
                                                 </table>
-                                                <div class="clearfix">
-                                                    <div class="hint-text">Mostrando <b>5</b> de <b>25</b> resultados</div>
-                                                    <ul class="pagination">
-                                                        <li class="page-item disabled"><a href="#">Anterior</a></li>
-                                                        <li class="page-item"><a href="#" class="page-link">1</a></li>
-                                                        <li class="page-item"><a href="#" class="page-link">2</a></li>
-                                                        <li class="page-item active"><a href="#" class="page-link">3</a></li>
-                                                        <li class="page-item"><a href="#" class="page-link">4</a></li>
-                                                        <li class="page-item"><a href="#" class="page-link">5</a></li>
-                                                        <li class="page-item"><a href="#" class="page-link">Siguiente</a></li>
-                                                    </ul>
-                                                </div>
+                                                
                                             </div>
                                         </div>
                                     </div>

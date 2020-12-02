@@ -1,0 +1,1 @@
+<?php require 'components/Doctores/Homedoc/Homedoc.php'; ?>

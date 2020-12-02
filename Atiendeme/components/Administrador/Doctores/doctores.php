@@ -46,9 +46,9 @@
                 <h4 class="text-light font-weight-bold mb-0">Administrador</h4>
             </div>
             <div class="menu">
-                <a href="dashboard.php" class="d-block text-light p-3 border-0 ">Inicio</a>
+                <a href="dashboard.php" class="d-block text-light p-3 border-0 ">Home</a>
                 <a href="doctores.php" class="d-block text-light p-3 border-0 active-menu-option">Doctores</a>
-                <a href="consultorios.php" class="d-block text-light p-3 border-0 ">Consultorios</a>
+                <a href="consultorios.php" class="d-block text-light p-3 border-0 ">Centros</a>
                 <a href="manejosec.php" class="d-block text-light p-3 border-0 ">Secretarias</a>
                 <a href="servicios.php" class="d-block text-light p-3 border-0 ">Servicios</a>
             </div>
@@ -147,7 +147,17 @@
                                                                         ?>
                                                                         </ul>
                                                                     </td>
-                                                                    <td><?php echo $row_doctors['schedule'] ?></td>
+                                                                    <td>
+                                                                        <?php
+                                                                        //date('h:i A', strtotime($row_doctor_schedule['start_time']));
+                                                                           /* $stmt_select_doctor_schedule = $PDO_conn->prepare(" SELECT * FROM doctor_schedule WHERE doctor_id = ? ");
+                                                                            $stmt_select_doctor_schedule->execute([$row_doctors['id']]);
+                                                                            $char = '';
+                                                                            while ($row_doctor_schedule = $stmt_select_doctor_schedule->fetch(PDO::FETCH_ASSOC)) {
+                                                                                echo $row_doctor_schedule['day'].": ".date('h:i A', strtotime($row_doctor_schedule['start_time']))." a ".date('h:i A', strtotime($row_doctor_schedule['end_time']))."<br>";
+                                                                        }*/
+                                                                        ?>
+                                                                    </td>
                                                                     <td>
                                                                         <ul>
                                                                         <?php
@@ -174,18 +184,7 @@
 
                                                     </tbody>
                                                 </table>
-                                                <div class="clearfix">
-                                                    <div class="hint-text">Mostrando <b>5</b> de <b>25</b> resultados</div>
-                                                    <ul class="pagination">
-                                                        <li class="page-item disabled"><a href="#">Anterior</a></li>
-                                                        <li class="page-item"><a href="#" class="page-link">1</a></li>
-                                                        <li class="page-item"><a href="#" class="page-link">2</a></li>
-                                                        <li class="page-item active"><a href="#" class="page-link">3</a></li>
-                                                        <li class="page-item"><a href="#" class="page-link">4</a></li>
-                                                        <li class="page-item"><a href="#" class="page-link">5</a></li>
-                                                        <li class="page-item"><a href="#" class="page-link">Siguiente</a></li>
-                                                    </ul>
-                                                </div>
+                                                
                                             </div>
                                         </div>
                                     </div>
@@ -235,11 +234,33 @@
                                                                     </select>
                                                                 </div>
                                                             </div>
-
+                                                                            
                                                             <div class="col-md-12">
                                                                 <div class="form-group">
-                                                                    <label>Horarios</label>
-                                                                    <textarea class="form-control" name="schedule" required></textarea>
+                                                                    <label>Dias</label>
+                                                                    <select class="form-control" name="days[]" multiple required>
+                                                                    <option value="Lunes" selected>Lunes</option>
+                                                                    <option value="Martes">Martes</option>
+                                                                    <option value="Miercoles">Miercoles</option>
+                                                                    <option value="Jueves">Jueves</option>
+                                                                    <option value="Viernes">Viernes</option>
+                                                                    <option value="Sabado">Sabado</option>
+                                                                    <option value="Domingo">Domingo</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-6">
+                                                                <div class="form-group">
+                                                                    <label>Hora inicio</label>
+                                                                    <input type="time" class="form-control" name="start_time" required />
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-6">
+                                                                <div class="form-group">
+                                                                    <label>Hora fin</label>
+                                                                    <input type="time" class="form-control" name="end_time" required />
                                                                 </div>
                                                             </div>
 
@@ -253,6 +274,7 @@
                                                         </div>
 
                                                     </div>
+                                                    
                                                     <div class="modal-footer">
                                                         <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancelar">
                                                         <input type="submit" class="btn btn-success" name="btnAddDoctor" value="Guardar">

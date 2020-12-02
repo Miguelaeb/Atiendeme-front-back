@@ -53,11 +53,10 @@
                 <div class="icon cancel-btn">
                     <i class="fas fa-times"></i>
                 </div>
-                <li><a href="#">Inicio</a></li>
+                <li><a href="homepac.php">Home</a></li>
                 <li><a href="#">Hacer cita</a></li>
-                <li><a href="#">Ver mis citas</a></li>
+                <li><a href="vercitaspac.php">Ver mis citas</a></li>
                 <li><a href="#">Ver doctores</a></li>
-                <li><a href="#">Ver servicios</a></li>
             </ul>
             <div class="icon menu-btn">
                 <i class="fas fa-bars"></i>
@@ -114,7 +113,7 @@
                                         <div class="row">
                                             <div class="col-md-6">
                                                 <div class="form-group">
-                                                    <label class="form-label">Consultorios:</label>
+                                                    <label class="form-label">Centros:</label>
                                                     <input list="dentistList" value="" class="custom-select custom-select-md">
                                                     <datalist id="dentistList">
                                                         
@@ -260,12 +259,12 @@
                                         <h3 class="text-center mt-3 mb-5">Detalles</h3>
                                         <div class="all-info-container">
                                             <div class="list-content">
-                                                <a href="#listone" data-toggle="collapse" aria-expanded="false" aria-controls="listone">Consultorio y Servicio<i class="fa fa-chevron-down"></i></a>
+                                                <a href="#listone" data-toggle="collapse" aria-expanded="false" aria-controls="listone">Centro y Servicio<i class="fa fa-chevron-down"></i></a>
                                                 <div class="collapse" id="listone">
                                                     <div class="list-box">
                                                         <div class="row">
                                                             <div class="col-md-4 offset-md-2">
-                                                                <p><strong>Consultorio:</strong> Dentis Care </p>
+                                                                <p><strong>Centro:</strong> Dentis Care </p>
                                                             </div>
 
                                                             <div class="col-md-4 offset-md-2">

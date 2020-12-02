@@ -46,10 +46,9 @@
                     <a href="hacer_citas.php" class="d-block text-light p-3 border-0">Hacer cita</a>
                 <?php }
                 ?>
-                <a href="#" class="d-block text-light p-3 border-0">Ver mis citas</a>
+                <a href="vercitaspac.php" class="d-block text-light p-3 border-0">Ver mis citas</a>
                 <a href="dependientes.php" class="d-block text-light p-3 border-0">Dependientes</a>
                 <a href="#" class="d-block text-light p-3 border-0">Ver doctores</a>
-                <a href="#" class="d-block text-light p-3 border-0">Ver servicios</a>
             </div>
         </div>
         <!-- Fin sidebar -->
@@ -113,27 +112,22 @@
                                 <div class="row">
                                     <div class="col-lg-3 col-md-6 d-flex stat my-3">
                                         <div class="mx-auto">
-                                            <button type="button" class="btn btn-outline-info">Hacer cita</button>
+                                            <a href="hacer_citas.php" type="button" class="btn btn-outline-info">Hacer cita</a>
                                         </div>
                                     </div>
                                     <div class="col-lg-3 col-md-6 d-flex stat my-3">
                                         <div class="mx-auto">
-                                            <a href="#" class="btn btn-outline-info">Ver mis citas</a>
+                                            <a href="vercitaspac.php" class="btn btn-outline-info">Ver mis citas</a>
                                         </div>
                                     </div>
                                     <div class="col-lg-3 col-md-6 d-flex stat my-3">
                                         <div class="mx-auto">
-                                            <a href="#" class="btn btn-outline-info">Dependientes</a>
+                                            <a href="dependientes.php" class="btn btn-outline-info">Dependientes</a>
                                         </div>
                                     </div>
                                     <div class="col-lg-3 col-md-6 d-flex stat my-3">
                                         <div class="mx-auto">
-                                            <button type="button" class="btn btn-outline-info">Ver doctores</button>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-6 d-flex my-3">
-                                        <div class="mx-auto">
-                                            <button type="button" class="btn btn-outline-info">Ver servicios</button>
+                                            <a type="button" class="btn btn-outline-info">Ver doctores</a>
                                         </div>
                                     </div>
                                 </div>

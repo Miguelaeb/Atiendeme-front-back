@@ -1,0 +1,1 @@
+<?php require 'components/Secretaria/Homesec/homesec.php'; ?>

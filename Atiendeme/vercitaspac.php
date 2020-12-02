@@ -1,0 +1,1 @@
+<?php require 'components/Pacientes/Vercitas/vercitaspac.php'; ?>

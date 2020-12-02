@@ -46,12 +46,11 @@
                 <h4 class="text-light font-weight-bold mb-0">Pacientes</h4>
             </div>
             <div class="menu">
-                <a href="homepac.php" class="d-block text-light p-3 border-0">Inicio</a>
+                <a href="homepac.php" class="d-block text-light p-3 border-0">Home</a>
                 <a href="hacer_citas.php" class="d-block text-light p-3 border-0">Hacer cita</a>
-                <a href="#" class="d-block text-light p-3 border-0">Ver mis citas</a>
-                <a href="#" class="d-block text-light p-3 border-0 active-menu-option">Dependientes</a>
+                <a href="vercitaspac.php" class="d-block text-light p-3 border-0">Ver mis citas</a>
+                <a href="dependientes.php" class="d-block text-light p-3 border-0 active-menu-option">Dependientes</a>
                 <a href="#" class="d-block text-light p-3 border-0">Ver doctores</a>
-                <a href="#" class="d-block text-light p-3 border-0">Ver servicios</a>
             </div>
         </div>
         <!-- Fin sidebar -->
@@ -143,18 +142,7 @@
 
                                                     </tbody>
                                                 </table>
-                                                <div class="clearfix">
-                                                    <div class="hint-text">Mostrando <b>5</b> de <b>25</b> resultados</div>
-                                                    <ul class="pagination">
-                                                        <li class="page-item disabled"><a href="#">Anterior</a></li>
-                                                        <li class="page-item"><a href="#" class="page-link">1</a></li>
-                                                        <li class="page-item"><a href="#" class="page-link">2</a></li>
-                                                        <li class="page-item active"><a href="#" class="page-link">3</a></li>
-                                                        <li class="page-item"><a href="#" class="page-link">4</a></li>
-                                                        <li class="page-item"><a href="#" class="page-link">5</a></li>
-                                                        <li class="page-item"><a href="#" class="page-link">Siguiente</a></li>
-                                                    </ul>
-                                                </div>
+                                                
                                             </div>
                                         </div>
                                     </div>

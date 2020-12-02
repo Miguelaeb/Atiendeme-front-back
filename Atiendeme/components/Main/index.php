@@ -28,7 +28,7 @@ session_start();
                 <li><a href="registro.php">
                     <?php
                         if(isset($_SESSION['logged'])){
-                            echo "Mi perfil";
+                            echo "Home";
                         }else{
                             echo "Registrarse";
                         }
@@ -53,28 +53,79 @@ session_start();
 
     <!-- About us -->
 
-    <div class="about" id="about-us">
-        <div class="content">
-            <div class="title">We are awesome we are unique</div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo impedit atque consequatur! Iusto distinctio temporibus repellendus labore odit adipisci harum ipsa beatae natus, eum eius, hic aperiam odio! Quasi molestias magnam illo voluptatem
-                iusto ipsam blanditiis, tempore cumque reiciendis quaerat vero tenetur, sequi dolores libero voluptas vitae voluptate placeat dolorum modi ipsa nisi repellat facilis aliquam asperiores. Aut nam repellat harum quas saepe dolorum voluptates
-                ratione, itaque consectetur explicabo a facilis rem mollitia maxime repudiandae fuga reprehenderit, odio cum incidunt labore molestiae quis non perferendis ipsam. Illum, in, deserunt. Ipsa.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit hic excepturi nobis id, eos dolor libero, nam assumenda, at culpa quos perspiciatis ratione ea modi! Natus sapiente a, explicabo sit quisquam eligendi esse provident eos enim
-                doloremque blanditiis aut placeat veniam, libero nostrum quae. Ipsam, iste reprehenderit minima accusantium illo dolorem recusandae, ipsa autem quidem reiciendis a mollitia sit tenetur.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint doloremque perspiciatis voluptate ducimus reiciendis rem expedita voluptatibus dicta harum, quo, aspernatur maiores possimus officia quod? Aliquid molestiae illo sequi, tempora
-                perferendis at incidunt nam porro voluptatibus, iste aperiam blanditiis adipisci ducimus repellendus distinctio nostrum ipsum! Voluptas facilis cum, atque tempora magnam beatae sequi! Doloribus expedita, cupiditate quo quod nemo aliquam,
-                mollitia cum ea nam ullam soluta temporibus! Repudiandae incidunt consequatur distinctio deleniti obcaecati sit facilis unde, quisquam veniam ad doloribus!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet veniam error deleniti cum beatae non assumenda illum est dolores, possimus suscipit quibusdam eveniet id fuga dolore unde modi, sapiente voluptas. Mollitia veritatis explicabo
-                cumque enim quia voluptates provident totam perferendis excepturi animi assumenda optio minus laudantium eveniet possimus amet blanditiis dolore in fuga atque, earum officia tempora quam similique est.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque ad sunt distinctio quidem incidunt cupiditate sequi deleniti, corrupti officia nam veritatis facilis veniam dolorum enim nisi ipsum dolor rem! Doloribus, eaque odit voluptatem
-                iste laboriosam provident facere quo. Cum repellat pariatur, error ratione repellendus nisi quam culpa tempora facere in atque nesciunt, magni est aliquid unde soluta optio! Dolore pariatur, quaerat quo in cupiditate deleniti exercitationem.
-                Facilis suscipit corporis unde aut minima nihil, eum molestias itaque, tenetur, beatae ipsa at!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque ad sunt distinctio quidem incidunt cupiditate sequi deleniti, corrupti officia nam veritatis facilis veniam dolorum enim nisi ipsum dolor rem! Doloribus, eaque odit voluptatem
-                iste laboriosam provident facere quo. Cum repellat pariatur, error ratione repellendus nisi quam culpa tempora facere in atque nesciunt, magni est aliquid unde soluta optio! Dolore pariatur, quaerat quo in cupiditate deleniti exercitationem.
-                Facilis suscipit corporis unde aut minima nihil, eum molestias itaque, tenetur, beatae ipsa at!</p>
+    <!-- About us -->
 
+    <div class="about" id="about-us">
+        <div class="content bootstrap-wrapper" style="padding-bottom: 20px">
+            <div class="title" style="padding-bottom: 40px">Sobre Nosotros</div>
+            <div class="row text-center pad-bottom" style="text-align: center" data-scroll-reveal="enter from the bottom after 0.4s" data-scroll-reveal-id="5" data-scroll-reveal-initialized="true" data-scroll-reveal-complete="true">
+                <div class="col-md-4 padding-top-20">
+                    <i class="fab fa-tripadvisor icon-fontawesome-service"></i>
+                    <h4><strong>Nuestra Visión </strong></h4>
+                    <p>
+                        Ser la institución líder en servicios odontológicos a nivel nacional y América Latina; logrando la expansión de las coberturas, la mejora continúa de los procesos y garantizando calidad y profesionalidad.
+                    </p>
+                </div>
+
+                <div class="col-md-4 padding-top-20">
+                    <i class="fas fa-hands-helping icon-fontawesome-service"></i>
+
+                    <h4><strong>Misión </strong></h4>
+                    <p>
+                        Brindar un servicio de excelencia en el área de salud oral, basado en conocimientos, alta tecnología y calidez humana que cubran las necesidades y expectativas de nuestros pacientes e interesados.
+                    </p>
+                </div>
+
+                <div class="col-md-4 padding-top-20">
+                    <i class="fas fa-clipboard-list icon-fontawesome-service"></i>
+                    <h4><strong>  Área de Servicios </strong></h4>
+                    <p>
+                        Tenemos multiples servicios especialicados en lo que necesita:Cirugia Oral, Endodoncia, Ortodoncia, etc.
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
+    <hr>
+    <!-- Our Services -->
+
+    <div class="about" id="services">
+        <div class="content bootstrap-wrapper" style="padding-bottom: 20px">
+            <div class="title" style="padding-bottom: 40px">Nuestros Servicios</div>
+            <div class="row text-center pad-bottom" style="text-align: center" data-scroll-reveal="enter from the bottom after 0.4s" data-scroll-reveal-id="5" data-scroll-reveal-initialized="true" data-scroll-reveal-complete="true">
+                <div class="col-md-3 padding-top-20">
+                    <i class="far fa-grimace icon-fontawesome-service"></i>
+                    <h4><strong>Service Name # 1 </strong></h4>
+                    <p>
+                        Consectetur adipiscing elit felis dolor felis dolor vitae.Eelit felis dolor vitae felis dolor vitae
+                    </p>
+                </div>
+                <div class="col-md-3 padding-top-20">
+                    <i class="fas fa-stethoscope  icon-fontawesome-service"></i>
+                    <h4><strong>Service Name # 1 </strong></h4>
+                    <p>
+
+                        Consectetur adipiscing elit felis dolor felis dolor vitae.Eelit felis dolor vitae felis dolor vitae
+                    </p>
+                </div>
+                <div class="col-md-3 padding-top-20">
+                    <i class="fas fa-tooth icon-fontawesome-service"></i>
+                    <h4><strong>Service Name # 1 </strong></h4>
+                    <p>
+                        Consectetur adipiscing elit felis dolor felis dolor vitae.Eelit felis dolor vitae felis dolor vitae
+                    </p>
+                </div>
+                <div class="col-md-3 padding-top-20">
+                    <i class="fas fa-teeth-open icon-fontawesome-service"></i>
+                    <h4><strong>Service Name # 1 </strong></h4>
+                    <p>
+                        Consectetur adipiscing elit felis dolor felis dolor vitae.Eelit felis dolor vitae felis dolor vitae
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <!-- Script -->
 
