@@ -8,6 +8,7 @@ session_start();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/shared.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/dmhendricks/bootstrap-grid-css@4.1.3/dist/css/bootstrap-grid.min.css" />
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 
@@ -23,7 +24,7 @@ session_start();
                 </div>
                 <li><a href="#">Inicio</a></li>
                 <li><a href="#about-us">Sobre Nosotros</a></li>
-                <li><a href="#servicios-us">Servicios</a></li>
+                <li><a href="#services">Servicios</a></li>
                 <li><a href="#contact-us">Contactanos</a></li>
                 <li><a href="registro.php">
                     <?php
@@ -91,40 +92,36 @@ session_start();
 
     <div class="about" id="services">
         <div class="content bootstrap-wrapper" style="padding-bottom: 20px">
-            <div class="title" style="padding-bottom: 40px">Nuestros Servicios</div>
+            <div class="title" style="padding-bottom: 40px">Servicios</div>
             <div class="row text-center pad-bottom" style="text-align: center" data-scroll-reveal="enter from the bottom after 0.4s" data-scroll-reveal-id="5" data-scroll-reveal-initialized="true" data-scroll-reveal-complete="true">
-                <div class="col-md-3 padding-top-20">
-                    <i class="far fa-grimace icon-fontawesome-service"></i>
-                    <h4><strong>Service Name # 1 </strong></h4>
+                <div class="col-md-4 padding-top-20">
+                    <img src="assets/images/braces.png">
+                    <h4><strong> Protesis </strong></h4>
                     <p>
-                        Consectetur adipiscing elit felis dolor felis dolor vitae.Eelit felis dolor vitae felis dolor vitae
+                        Ser la institución líder en servicios odontológicos a nivel nacional y América Latina; logrando la expansión de las coberturas, la mejora continúa de los procesos y garantizando calidad y profesionalidad.
                     </p>
                 </div>
-                <div class="col-md-3 padding-top-20">
-                    <i class="fas fa-stethoscope  icon-fontawesome-service"></i>
-                    <h4><strong>Service Name # 1 </strong></h4>
-                    <p>
 
-                        Consectetur adipiscing elit felis dolor felis dolor vitae.Eelit felis dolor vitae felis dolor vitae
+                <div class="col-md-4 padding-top-20">
+                   
+
+                    <h4><strong> Ortodoncia </strong></h4>
+                    <p>
+                        Brindar un servicio de excelencia en el área de salud oral, basado en conocimientos, alta tecnología y calidez humana que cubran las necesidades y expectativas de nuestros pacientes e interesados.
                     </p>
                 </div>
-                <div class="col-md-3 padding-top-20">
-                    <i class="fas fa-tooth icon-fontawesome-service"></i>
-                    <h4><strong>Service Name # 1 </strong></h4>
+
+                <div class="col-md-4 padding-top-20">
+                 
+                    <h4><strong>  Estetica dental </strong></h4>
                     <p>
-                        Consectetur adipiscing elit felis dolor felis dolor vitae.Eelit felis dolor vitae felis dolor vitae
-                    </p>
-                </div>
-                <div class="col-md-3 padding-top-20">
-                    <i class="fas fa-teeth-open icon-fontawesome-service"></i>
-                    <h4><strong>Service Name # 1 </strong></h4>
-                    <p>
-                        Consectetur adipiscing elit felis dolor felis dolor vitae.Eelit felis dolor vitae felis dolor vitae
+                        Tenemos multiples servicios especialicados en lo que necesita:Cirugia Oral, Endodoncia, Ortodoncia, etc.
                     </p>
                 </div>
             </div>
         </div>
     </div>
+    
 
 
     <!-- Script -->

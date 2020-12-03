@@ -34,6 +34,10 @@
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+
+ 
+
     <title>Atiendeme - Manejo doctores</title>
 </head>
 
@@ -188,6 +192,7 @@
                                             </div>
                                         </div>
                                     </div>
+
                                     <!-- Edit Modal HTML -->
                                     <div id="addDoctorModal" class="modal fade">
                                         <div class="modal-dialog modal-lg">
@@ -234,12 +239,16 @@
                                                                     </select>
                                                                 </div>
                                                             </div>
-                                                                            
-                                                            <div class="col-md-12">
+
+                                                           <!-- Horarios de doctores -->
+                                                           <div class="col-md-12 mb-2">
+                                                                <label>Horario</label>
+                                                            </div>
+                                                            <div class="col-sm-3">
                                                                 <div class="form-group">
-                                                                    <label>Dias</label>
-                                                                    <select class="form-control" name="days[]" multiple required>
-                                                                    <option value="Lunes" selected>Lunes</option>
+                                                                    <label>Dia</label>
+                                                                    <select class="form-control" id="days" required>
+                                                                    <option value="Lunes">Lunes</option> 
                                                                     <option value="Martes">Martes</option>
                                                                     <option value="Miercoles">Miercoles</option>
                                                                     <option value="Jueves">Jueves</option>
@@ -250,29 +259,58 @@
                                                                 </div>
                                                             </div>
 
-                                                            <div class="col-md-6">
+                                                            <div class="col-sm-4">
                                                                 <div class="form-group">
                                                                     <label>Hora inicio</label>
-                                                                    <input type="time" class="form-control" name="start_time" required />
+                                                                    <input type="time" class="form-control" id="startTime" required>
                                                                 </div>
                                                             </div>
 
-                                                            <div class="col-md-6">
+                                                            <div class="col-sm-4">
                                                                 <div class="form-group">
                                                                     <label>Hora fin</label>
-                                                                    <input type="time" class="form-control" name="end_time" required />
+                                                                    <input type="time" class="form-control" id="endTime" required>
                                                                 </div>
                                                             </div>
 
+                                                            <div class="col-sm-1">
+                                                                <a href="#" class="btn btn-success mt-4" style="min-width: inherit" id="btnAddScheduleToList" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span></span></a>
+                                                            </div>
+
+                                                            <div class="col-md-12" id="scheduleList">
+                                                                
+                                                            <div class="table-responsive" id="table-modal-doctors">
+                                                                <table class="table table-striped table-hover">
+                                                                    <thead>
+                                                                        <tr class="table-title">
+                                                                            <th width="25">Dia</th>
+                                                                            <th width="30">Hora inicio</th>
+                                                                            <th width="30">Hora fin</th>
+                                                                            <th width="15" style="text-align: center">Accion</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody id="table-doctors-body">
+                                                                       
+                                                                    </tbody>
+                                                                </table>
+
+                                                            </div>
+                                                            </div>
+
+                                                            <!-- Contraseña de doctores -->    
                                                             <div class="col-md-6">
                                                                 <div class="form-group">
                                                                     <label>Contrase&ntilde;a</label>
-                                                                    <input type="text" class="form-control" name="pass" required>
+                                                                    <input type="password" class="form-control" name="pass" required>
                                                                 </div>
+
+                                                                <div class="form-group">
+                                                                    <label>Confirmar contrase&ntilde;a</label>
+                                                                    <input type="password" class="form-control" name="pass" required>
+                                                                </div>
+
                                                             </div>
-
                                                         </div>
-
                                                     </div>
                                                     
                                                     <div class="modal-footer">
@@ -283,6 +321,7 @@
                                             </div>
                                         </div>
                                     </div>
+
                                     <!-- Delete Modal HTML -->
                                     <div id="deleteEmployeeModal" class="modal fade">
                                         <div class="modal-dialog">
@@ -314,13 +353,17 @@
     </div>
 
     <!-- JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"   integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src="vendor/bootstrap/bootstrap.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+    <script src="https:/cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+ 
 
+
+    <script src="js/shared.js"></script>
     <script src="js/doctores.js"></script>
+ 
 
 </body>
 
